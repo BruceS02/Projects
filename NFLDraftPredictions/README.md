@@ -1,53 +1,36 @@
-# Semester-Project
+# NFL Draft Order Prediction using Machine Learning
+### Authored by: Bruce Smith, AJ Bensman, Burke Dugan, Ethan Pritchard, Jay Stansberry, and Han Sullivan
 
+Welcome to the NFL Draft Order Prediction project! In this machine learning project, we explore the exciting world of sports analytics by leveraging various techniques to predict the NFL draft order based on college player statistics. Our goal is to build predictive models that assist teams in identifying potential top draft picks.
 
-Group Project for CMSE202
+## Introduction
 
-Predicting NFL Draft Order Based on College Performance and Physical Attributes
+The NFL Draft is a pivotal event where teams select players from college programs to join their professional ranks. Our project aims to harness the power of machine learning to predict the order in which players will be drafted based on their college performance metrics.
 
-by AJ Bensman,  Burke Dugan,  Ethan Pritchard,  Bruce Smith, Jay Stansberry, and Han Sullivan
+## Features
 
-## How the code should be run
+- Utilization of Support Vector Machines (SVM), Principal Component Analysis (PCA), Multinomial Logistic Regression, and Multiple Regression for predictive modeling.
+- Handling of diverse college player statistics as input features, including yards gained, touchdowns scored, interceptions, and more.
+- Implementation of data preprocessing techniques to clean, transform, and standardize the dataset.
+- Exploration of dimensionality reduction using PCA to extract key features and reduce multicollinearity.
+- Comparative analysis of different machine learning algorithms to identify the most accurate prediction models.
 
-There are two jupyter notebook files that contain all our code: clean_and_merge_data.ipynb and Combined_Analysis.ipynb.
+## Data
 
-clean_and_merge_data.ipynb does not need to be run as all files are saved in the repo and submitted, but it can be if you are unable to find some of the csv files.
+The dataset used in this project comprises comprehensive college player statistics gathered over multiple seasons. These statistics include passing, rushing, receiving, and defensive performance metrics. The dataset is obtained from reputable sources and meticulously cleaned to ensure accuracy.
 
-Combined_Analysis.ipynb contains all data analysis and can be run after installing the necessary packages, such as wordcloud.
+## Methods
 
-## Contributions
+1. **Data Preprocessing:** The dataset is carefully preprocessed, involving handling of missing values, encoding categorical variables, and standardizing features.
 
-#### AJ
-- cleaned, filtered, and reformatted data from initial college statistics source into usable format
-- did principal components analysis for  wide receivers
-- did principal SVM for wide receivers
-- did multinomial logistic regression for quarterbacks, wide receivers, and running backs
-- cleaned up old files from repo
-- combined merging and data cleaning code neatly
+2. **Principal Component Analysis (PCA):** PCA is employed to reduce the dimensionality of the dataset while retaining relevant information, enhancing model performance and interpretability.
 
-#### Jay
-- Quaterback PCA
-- Multiple Regression for wide recievers and defensive backs
-- Figured out how to reverse PCA coefficients
+3. **Support Vector Machines (SVM):** We leverage SVM to classify players based on their college statistics and predict their draft order. Hyperparameter tuning is performed for optimal results.
 
-#### Ethan
-- Data Sourcing, cleaning, and merging for Wide receivers and runningbacks
-- DB PCA + SVM
-- Quarterback SVM
-- Worked on presenation formatting and content
+4. **Multinomial Logistic Regression:** Multinomial logistic regression is applied to predict the draft round in which players are likely to be selected.
 
-#### Bruce
-- Running back PCA
-- Multiple regression for running back 
-- Added content and visuals for presentation 
-- Commented all of the running back results
+5. **Multiple Regression:** We use multiple regression to estimate the projected draft position of players based on their college performance.
 
-#### Burke
-- Multiple Regression for Quarterbacks
-- Content for presentation
-- Discussion/Analyzation of Quarterback results
+## Results
 
-#### Han
-- Data cleaning and merging for Quarterbacks
-- Running Back SVM
-- Added presentation content
+The project's success is evaluated based on the accuracy of the prediction models, precision-recall metrics, and comparative analysis of different algorithms. We present our findings and insights regarding the predictive power of each technique.
