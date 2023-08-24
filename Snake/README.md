@@ -1,8 +1,9 @@
 # Snake game with AI model
 #### Author: Bruce Smith
 
-
-INSERT GIF
+<p align="center">
+  <img src="Demos/snake_ai_short_demo.gif" alt="animated" />
+</p>
 
 
 Welcome to Snake with a Deep Q-Learning model that is designed to beat the game. This project combines the classic Snake game experience with the power of artificial intelligence. The game itself offers an engaging and nostalgic experience of controlling a snake, while the AI model aims to learn and achieve high scores.
